@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CivicLearn — Voter Education Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">
+    <div class="badge">
+      <svg viewBox="0 0 24 24"><path d="M12 2L3 7l9 5 9-5-9-5zM3 12l9 5 9-5M3 17l9 5 9-5"/></svg>
+    </div>
+    <span>CivicLearn</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#faq" class="nav-cta">Get Started</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <div class="hero-tag"><span class="dot"></span>Free Civic Education</div>
+      <h1 class="hero-title">Understanding <em>Elections</em> &amp; Your Vote</h1>
+      <p class="hero-desc">Democracy works best when citizens are informed. Learn how elections work, what your vote means, and how to participate in shaping your future.</p>
+      <div class="hero-btns">
+        <a href="#process" class="btn-primary">Explore the Process <span>→</span></a>
+        <a href="#about" class="btn-outline">What are Elections?</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><div class="stat-num">4</div><div class="stat-label">Simple Steps</div></div>
+        <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Free to Learn</div></div>
+        <div class="stat-item"><div class="stat-num">18+</div><div class="stat-label">Eligible Age</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <!-- SVG Illustration -->
+      <svg class="hero-illustration" viewBox="0 0 480 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background shapes -->
+        <ellipse cx="240" cy="360" rx="200" ry="30" fill="#EEF4FF" opacity=".7"/>
+        <!-- Ballot Box -->
+        <rect x="110" y="180" width="260" height="180" rx="18" fill="#1A4FA0"/>
+        <rect x="110" y="180" width="260" height="50" rx="18" fill="#0D2B5E"/>
+        <rect x="110" y="210" width="260" height="20" fill="#0D2B5E"/>
+        <!-- Slot -->
+        <rect x="200" y="195" width="80" height="10" rx="5" fill="#3B82D8"/>
+        <!-- Box details -->
+        <rect x="140" y="250" width="200" height="8" rx="4" fill="rgba(255,255,255,.12)"/>
+        <rect x="140" y="270" width="160" height="8" rx="4" fill="rgba(255,255,255,.08)"/>
+        <rect x="140" y="290" width="180" height="8" rx="4" fill="rgba(255,255,255,.08)"/>
+        <!-- Lock -->
+        <rect x="222" y="310" width="36" height="28" rx="6" fill="#3B82D8"/>
+        <path d="M228 310 v-10 a12 12 0 0 1 24 0 v10" stroke="rgba(255,255,255,.6)" stroke-width="3" fill="none"/>
+        <circle cx="240" cy="322" r="4" fill="white" opacity=".7"/>
+        <!-- Ballot paper -->
+        <rect x="190" y="80" width="100" height="130" rx="8" fill="white" stroke="#D1DDEF" stroke-width="2"
+              transform="rotate(-6 240 145)"/>
+        <!-- Lines on ballot -->
+        <rect x="202" y="100" width="66" height="6" rx="3" fill="#D1DDEF" transform="rotate(-6 235 103)"/>
+        <rect x="202" y="116" width="54" height="6" rx="3" fill="#D1DDEF" transform="rotate(-6 229 119)"/>
+        <!-- Check marks on ballot -->
+        <circle cx="210" cy="138" r="8" fill="#EEF4FF" transform="rotate(-6 210 138)"/>
+        <path d="M207 138 l3 3 5-6" stroke="#1A4FA0" stroke-width="2.5" stroke-linecap="round" transform="rotate(-6 210 138)"/>
+        <circle cx="210" cy="158" r="8" fill="#EEF4FF" transform="rotate(-6 210 158)"/>
+        <circle cx="210" cy="178" r="8" fill="#EEF4FF" transform="rotate(-6 210 178)"/>
+        <!-- People icons -->
+        <g transform="translate(30, 230)">
+          <circle cx="0" cy="0" r="18" fill="#F4A724"/>
+          <circle cx="0" cy="-6" r="6" fill="white" opacity=".9"/>
+          <path d="M-10 8 a12 12 0 0 1 20 0" fill="white" opacity=".9"/>
+        </g>
+        <g transform="translate(420, 250)">
+          <circle cx="0" cy="0" r="18" fill="#0E8A7C"/>
+          <circle cx="0" cy="-6" r="6" fill="white" opacity=".9"/>
+          <path d="M-10 8 a12 12 0 0 1 20 0" fill="white" opacity=".9"/>
+        </g>
+        <!-- Stars -->
+        <text x="50" y="160" font-size="20" fill="#F4A724" opacity=".6">★</text>
+        <text x="400" y="150" font-size="16" fill="#3B82D8" opacity=".5">★</text>
+        <text x="350" y="320" font-size="12" fill="#1A4FA0" opacity=".4">★</text>
+        <!-- Dotted line to box slot -->
+        <line x1="240" y1="145" x2="240" y2="190" stroke="#3B82D8" stroke-width="2" stroke-dasharray="5 4" opacity=".6"/>
+        <!-- Arrow -->
+        <path d="M235 188 l5 6 5-6" stroke="#3B82D8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+      <div class="hero-card-badge">
+        <div class="icon-circle">🗳️</div>
+        <div>
+          <strong>Your Vote Counts</strong>
+          <p>Every single vote matters</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-main-card">
+          <h3>What Are Elections?</h3>
+          <p>An election is a formal process where citizens vote to choose their representatives or decide on issues. It is the foundation of any democratic society — giving power directly to the people.</p>
+        </div>
+        <div class="about-sub-cards">
+          <div class="about-sub-card">
+            <div class="icon">🏛️</div>
+            <h4>Democratic Right</h4>
+            <p>Every eligible citizen has the equal right to vote, regardless of background.</p>
+          </div>
+          <div class="about-sub-card">
+            <div class="icon">📋</div>
+            <h4>Formal Process</h4>
+            <p>Elections follow strict rules to ensure fairness, transparency and accuracy.</p>
+          </div>
+          <div class="about-sub-card">
+            <div class="icon">🤝</div>
+            <h4>Peaceful Transfer</h4>
+            <p>Elections allow power to change hands peacefully through the will of the people.</p>
+          </div>
+          <div class="about-sub-card">
+            <div class="icon">🌍</div>
+            <h4>Universal Practice</h4>
+            <p>Democracies around the world hold elections at regular intervals.</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-content reveal reveal-delay-2">
+        <div class="section-tag">About Elections</div>
+        <h2 class="section-title">Why Do Elections Matter?</h2>
+        <p>Elections are the cornerstone of democracy. They give citizens a voice in how their communities and countries are governed — deciding who makes laws, how taxes are spent, and what direction society takes.</p>
+        <p>Without elections, there is no accountability. Leaders chosen by the people must answer to the people. When they don't deliver, voters can peacefully replace them at the next election.</p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="num">01</div>
+            <div>
+              <h4>Representation</h4>
+              <p>Elected officials represent the voices of the communities they serve.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="num">02</div>
+            <div>
+              <h4>Accountability</h4>
+              <p>Leaders must answer to citizens or risk being voted out of office.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="num">03</div>
+            <div>
+              <h4>Participation</h4>
+              <p>High voter participation leads to governments that better reflect society.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="section-tag">Step by Step</div>
+      <h2 class="section-title">How the Election Process Works</h2>
+      <p class="section-desc">From registering to counting every vote — here's a simple breakdown of each stage in a democratic election.</p>
+    </div>
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-badge">
+          <div class="tl-circle">📝</div>
+          <span class="tl-num">Step 01</span>
+        </div>
+        <div class="tl-card">
+          <h3>Voter Registration</h3>
+          <p>Before you can vote, you must register with your local election authority. This confirms your eligibility — usually citizenship, age (18+), and residence. Registration deadlines vary, so check well in advance.</p>
+          <div class="example-box">
+            <strong>💡 Simple Example</strong>
+            Think of it like signing up before a big event. You can't participate unless your name is on the list. Registration ensures only eligible people vote — once each.
+          </div>
+          <div class="tl-tags">
+            <span class="tl-tag">Age 18+</span>
+            <span class="tl-tag">Citizen</span>
+            <span class="tl-tag">Local Resident</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal reveal-delay-1">
+        <div class="tl-badge">
+          <div class="tl-circle">📢</div>
+          <span class="tl-num">Step 02</span>
+        </div>
+        <div class="tl-card">
+          <h3>Campaigning Period</h3>
+          <p>Candidates and political parties campaign to earn your vote. They hold rallies, run advertisements, debate policy ideas, and share their vision. This is your chance to compare candidates and decide who represents your values.</p>
+          <div class="example-box">
+            <strong>💡 Simple Example</strong>
+            Like students campaigning for class president — each candidate tells you why they're the best choice. You evaluate them, ask questions, and make an informed decision.
+          </div>
+          <div class="tl-tags">
+            <span class="tl-tag">Debates</span>
+            <span class="tl-tag">Rallies</span>
+            <span class="tl-tag">Manifestos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal reveal-delay-2">
+        <div class="tl-badge">
+          <div class="tl-circle">🗳️</div>
+          <span class="tl-num">Step 03</span>
+        </div>
+        <div class="tl-card">
+          <h3>Election Day &amp; Voting</h3>
+          <p>On Election Day, registered voters go to their assigned polling station, verify identity, receive a ballot, and cast their vote privately. Votes are sealed and kept secure. In many places, mail-in and early voting options exist.</p>
+          <div class="example-box">
+            <strong>💡 Simple Example</strong>
+            You enter a private booth — like a changing room — mark your choice on the ballot in secret, then drop it in a secure box. No one can see or influence your vote.
+          </div>
+          <div class="tl-tags">
+            <span class="tl-tag">Secret Ballot</span>
+            <span class="tl-tag">Polling Stations</span>
+            <span class="tl-tag">Early Voting</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal reveal-delay-3">
+        <div class="tl-badge">
+          <div class="tl-circle">📊</div>
+          <span class="tl-num">Step 04</span>
+        </div>
+        <div class="tl-card">
+          <h3>Vote Counting &amp; Results</h3>
+          <p>After polls close, trained officials and independent observers count every ballot under strict supervision. Results are verified and officially declared. Losing candidates typically concede and a peaceful transfer of power follows.</p>
+          <div class="example-box">
+            <strong>💡 Simple Example</strong>
+            Like counting votes for "best movie of the year" — each ballot is opened, tallied, and double-checked by multiple people to ensure nothing was missed or changed.
+          </div>
+          <div class="tl-tags">
+            <span class="tl-tag">Transparent</span>
+            <span class="tl-tag">Supervised</span>
+            <span class="tl-tag">Official Results</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW VOTING WORKS -->
+<section id="how">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="section-tag">Key Concepts</div>
+      <h2 class="section-title">Important Things to Know</h2>
+      <p class="section-desc">Before you vote for the first time, understand these essential principles that protect the integrity of every election.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="info-card reveal">
+        <div class="card-accent"></div>
+        <div class="card-icon">🔒</div>
+        <h3>Secret Ballot</h3>
+        <p>Your vote is completely private. No one — not your employer, family, or the government — can find out how you voted. This protects voters from pressure or retaliation.</p>
+        <a href="#faq" class="card-link">Learn more →</a>
+      </div>
+      <div class="info-card green reveal reveal-delay-1">
+        <div class="card-accent"></div>
+        <div class="card-icon">⚖️</div>
+        <h3>One Person, One Vote</h3>
+        <p>Every registered voter gets exactly one vote, and every vote carries equal weight. This principle ensures fairness regardless of wealth, status, or social position.</p>
+        <a href="#faq" class="card-link">Learn more →</a>
+      </div>
+      <div class="info-card gold reveal reveal-delay-2">
+        <div class="card-accent"></div>
+        <div class="card-icon">👁️</div>
+        <h3>Transparent Counting</h3>
+        <p>Vote counting is observed by independent monitors, party representatives, and sometimes the public. This multi-layered oversight ensures honesty and accuracy.</p>
+        <a href="#faq" class="card-link">Learn more →</a>
+      </div>
+      <div class="info-card reveal reveal-delay-1">
+        <div class="card-accent"></div>
+        <div class="card-icon">📅</div>
+        <h3>Regular Intervals</h3>
+        <p>Elections are held on scheduled dates set by law. This predictability prevents leaders from staying in power indefinitely and ensures regular democratic renewal.</p>
+        <a href="#faq" class="card-link">Learn more →</a>
+      </div>
+      <div class="info-card green reveal reveal-delay-2">
+        <div class="card-accent"></div>
+        <div class="card-icon">🏛️</div>
+        <h3>Independent Bodies</h3>
+        <p>Elections are run by independent commissions — not the government in power. This separation ensures no single party has unfair control over the process.</p>
+        <a href="#faq" class="card-link">Learn more →</a>
+      </div>
+      <div class="info-card gold reveal reveal-delay-3">
+        <div class="card-accent"></div>
+        <div class="card-icon">📣</div>
+        <h3>Freedom to Campaign</h3>
+        <p>Candidates have the right to campaign freely, and voters have the right to hear different perspectives. A fair election requires open debate and free expression.</p>
+        <a href="#faq" class="card-link">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-wrap">
+    <div class="faq-layout">
+      <div class="faq-sidebar reveal">
+        <div class="section-tag">FAQ</div>
+        <h2 class="section-title">Common Questions</h2>
+        <p>Got questions about voting? Here are answers to the most frequently asked questions about the election process.</p>
+        <div class="faq-contact">
+          <h4>Need more help?</h4>
+          <p>Check your local election commission for specific rules in your region or country.</p>
+          <a href="#home">Back to top ↑</a>
+        </div>
+      </div>
+      <div class="faq-list reveal reveal-delay-1">
+
+        <div class="faq-item">
+          <div class="faq-q">
+            Who is eligible to vote?
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">In most democracies, you must be a citizen of the country, at least 18 years old, and registered to vote in your area. Some countries have additional requirements. It's best to check with your local election authority for the specific rules where you live.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            What ID do I need to vote?
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">Requirements vary by country and region. Common accepted documents include a national identity card, passport, voter registration card, or driver's license. Some places don't require ID if you're already on the voter roll. Always check your local election rules well before Election Day.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            What happens if I make a mistake on my ballot?
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">If you make an error before submitting your ballot, you can usually ask the polling official for a replacement ballot (called a "spoiled ballot"). Your incorrect ballot will be cancelled and you'll receive a new one. Once a ballot is placed in the box, it generally cannot be changed.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            Is my vote really secret?
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">Yes! The secret ballot is a fundamental principle of free elections. Ballots are not linked to your name or personal information after you submit them. Polling booths are designed so no one can see your choices. This protects voters from any form of pressure, intimidation, or retaliation.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            What if I can't go to the polling station?
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">Many countries offer alternatives including postal (mail-in) voting, early voting at designated centres, or proxy voting where a trusted person votes on your behalf. Some places provide accessible voting options for people with disabilities. Contact your local election authority to find out what options are available to you.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            How are votes counted fairly?
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">Vote counting is a highly supervised process. Election officials count ballots in public view, and representatives from different political parties are present as independent observers. In many countries, results from each polling station are publicly posted before being compiled. Discrepancies can be challenged and ballots recounted if there are concerns.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            What if I disagree with the result?
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">Election results can be legally challenged through official channels. Candidates or parties who believe there was fraud or irregularities can file a formal complaint with the election commission or take the matter to an electoral court. Independent observers and media also play a role in documenting and reporting any concerns.</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>Democracy Needs Informed Voters</h2>
+  <p>Share this resource with friends and family. The more informed voters are, the stronger our democracy becomes.</p>
+  <a href="#home" class="btn-white">🗳️ Start Learning Today</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="#home" class="footer-brand">
+      <div class="badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+          <path d="M12 2L3 7l9 5 9-5-9-5zM3 12l9 5 9-5M3 17l9 5 9-5"/>
+        </svg>
+      </div>
+      <span>CivicLearn</span>
+    </a>
+    <nav class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p>CivicLearn is an independent, non-partisan educational resource. Not affiliated with any government or political party.</p>
+    <p style="margin-top:6px">© 2025 CivicLearn. For educational purposes only.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
